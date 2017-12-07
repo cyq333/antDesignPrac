@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
-import StylePrac from './stylePrac';
+import CRMDemo from "./components/crmDemo";
+import StylePrac from "./stylePrac";
 import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
   <HashRouter>
     <div style={{ width: "100%", height: "100%" }}>
+      {/* CRMDemo练习 */}
+      <Route exact path="/" component={CRMDemo} />
       {/* ant design样式练习 */}
-      <Route exact path="/" component={StylePrac} />
+      <Route exact path="/prac" component={StylePrac} />
     </div>
   </HashRouter>,
   document.getElementById("root")

@@ -1,0 +1,15 @@
+.leftcontainer {
+    display: inline-block;
+    width: 410px;
+    height: 460px;
+}
+
+.inputstyle {
+    width: 150px;
+}
+
+.greybac {
+    width: 300px;
+    height: 310px;
+    background-color: #eeeeee;
+}

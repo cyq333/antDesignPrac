@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import { Button } from "antd";
 
 class StylePrac extends Component {

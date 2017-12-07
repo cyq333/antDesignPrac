@@ -1,0 +1,9 @@
+.rightcontainer {
+    display: inline-block;
+    float: right;
+    width: 650px;
+}
+
+.ant-checkbox-group {
+    display: inline-block;
+}
