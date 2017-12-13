@@ -1,39 +1,20 @@
-import React, { Component } from "react";
-import { Menu, Dropdown } from "antd";
+import React from "react";
+import { Select } from "antd";
 
 import "./userState.css";
 
-class UserState extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      userState: "离线"
-    };
-  }
+const Option = Select.Option;
 
-  render() {
+const UserState = () => {
     return (
-      <div className="statecontainer">
-        <Dropdown overlay={menu}>
-          <a className="ant-dropdown-link" href="#">
-            {this.state.userState}
-          </a>
-        </Dropdown>
+        <div className="statecontainer">
+        <Select defaultValue="离线" style={{ width: 120 }}>
+          <Option value="在线">在线</Option>
+          <Option value="离线">离线</Option>
+          <Option value="置忙">置忙</Option>
+        </Select>
       </div>
-    );
-  }
+    )
 }
-
-const onClick = function({ key }) {
-  console.log(key);
-};
-
-const menu = (
-  <Menu onClick={onClick}>
-    <Menu.Item key="在线">在线</Menu.Item>
-    <Menu.Item key="离线">离线</Menu.Item>
-    <Menu.Item key="置忙">置忙</Menu.Item>
-  </Menu>
-);
 
 export default UserState;

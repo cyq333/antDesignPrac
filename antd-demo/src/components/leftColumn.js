@@ -1,16 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Input, Select, Button } from "antd";
 import "./leftColumn.css";
 
-class LeftColumn extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
+const LeftColumn = () => {
     return (
-      <div className="leftcontainer">
+        <div className="leftcontainer">
         <div className="greybac">
           <div>
             <label>热线号码：</label>
@@ -83,9 +77,8 @@ class LeftColumn extends Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+    )
+};
 
 const Option = Select.Option;
 
